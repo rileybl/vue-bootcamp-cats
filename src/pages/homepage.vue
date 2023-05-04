@@ -32,5 +32,13 @@
 </script>
 
 <style scoped>
+.nav-item {
+  font-family: "Quicksand", Helvetica, Arial;
+  font-size: 20px;
+}
 
+h1 {
+  font-family: "Quicksand", Helvetica, Arial;
+  font-size: 20px;
+}
 </style>

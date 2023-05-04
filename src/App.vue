@@ -12,5 +12,9 @@ import {RouterView} from 'vue-router'
 
 
 <style scoped>
-
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand-Bold"),
+  url(./fonts/Quicksand-Bold.ttf) format("truetype");
+}
 </style>
