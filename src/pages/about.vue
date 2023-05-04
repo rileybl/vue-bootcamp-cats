@@ -9,12 +9,15 @@
           <RouterLink class="nav-link active" aria-current="page" to="/">Home</RouterLink>
         </li>
         <li class="nav-item">
+       <RouterLink class="nav-link" to="/Cats">Cats</RouterLink>
+     </li>
+        <li class="nav-item">
           <RouterLink class="nav-link" to="/About">About</RouterLink>
         </li>
         <li class="nav-item">
           <RouterLink class="nav-link" to="/Contact-us">Contact Us</RouterLink>
         </li>
-        
+      
       </ul>
     </div>
   </div>
