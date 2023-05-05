@@ -53,8 +53,9 @@
   padding: 10px;
 }
 .nav-item {
-  font-family: "QuicksandM", Helvetica, Arial;
-  font-size: 20px;
+  font-family: "Manrope", Helvetica, Arial;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 h1 {

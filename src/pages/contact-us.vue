@@ -80,8 +80,9 @@
   padding: 10px;
 }
 .nav-item {
-  font-family: "QuicksandM", Helvetica, Arial;
-  font-size: 20px;
+  font-family: "Manrope", Helvetica, Arial;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 h1 {
@@ -91,13 +92,14 @@ h1 {
 
 /* Contact Form */
 .form-container {
-  display: flex;
+  display: flexbox;
+  width: 50%;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin: 2rem auto;
   border: 1px solid black;
   border-radius: 20px;
-  padding: 1rem;
+  padding: 30px;
 
 }
 .form-fields {
@@ -119,7 +121,7 @@ body {
 button[type="submit"] {
   font-size: 1rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 8px 12px;
   font-family: "QuicksandB";
 }
@@ -129,5 +131,10 @@ input {
   border-width: 1px;
   width: 100%;
 
+}
+
+textarea {
+  width: 100%;
+  padding: 100px;
 }
 </style>

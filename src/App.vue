@@ -10,20 +10,10 @@ import { RouterView } from "vue-router";
 
 <style scoped>
 @font-face {
-  font-family: "QuicksandR";
-  src: local("Quicksand-Regular"),
-    url(./fonts/Quicksand-Regular.ttf) format("truetype");
+  font-family: "Manrope";
+  src: local("Manrope"),
+    url(./fonts/Manrope-VariableFont_wght.ttf) format("truetype");
 }
 
-@font-face {
-  font-family: "QuicksandB";
-  src: local("Quicksand-Bold"),
-    url(./fonts/Quicksand-Bold.ttf) format("truetype");
-}
 
-@font-face {
-  font-family: "QuicksandM";
-  src: local("Quicksand-Medium"),
-    url(./fonts/Quicksand-Medium.ttf) format("truetype");
-}
 </style>
