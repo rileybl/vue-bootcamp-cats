@@ -39,6 +39,9 @@
         <form accept-charset="UTF-8" method="POST">
           <div class="form-fields">
             <h1>Contact Form</h1>
+
+            <hr class="featurette-divider" />
+
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required />
           </div>
@@ -59,6 +62,7 @@
     </body>
 
     <RouterView />
+    
   </div>
 </template>
 
@@ -86,8 +90,9 @@
 }
 
 h1 {
-  font-family: "QuicksandB", Helvetica, Arial;
-  font-size: 30px;
+  font-family: "Manrope", Helvetica, Arial;
+  font-size: 70px;
+  font-weight: 900;
 }
 
 /* Contact Form */
@@ -99,20 +104,18 @@ h1 {
   margin: 2rem auto;
   border: 1px solid black;
   border-radius: 20px;
-  padding: 30px;
-
+  padding: 40px;
 }
 .form-fields {
   margin-bottom: 1rem;
-  
 }
 
 label {
-  font-family: "QuicksandR";
+  font-family: "Manrope";
   display: block;
   margin-bottom: 4px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 body {
@@ -122,15 +125,18 @@ button[type="submit"] {
   font-size: 1rem;
   border: none;
   border-radius: 20px;
-  padding: 8px 12px;
-  font-family: "QuicksandB";
+  padding: 8px 30px;
+  font-family: "Manrope";
+  font-weight: 900;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
 }
 
 input {
   border-radius: 20px;
   border-width: 1px;
   width: 100%;
-
 }
 
 textarea {

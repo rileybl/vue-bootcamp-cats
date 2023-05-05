@@ -94,6 +94,7 @@ const cats = [
       </div>
     </nav>
     <div class="container">
+      <h1 style="color: black; font-weight: 900; font-size: 70px; margin: 20px auto;">Meet our furry friends.</h1>
       <div class="row">
       <div class="col-md-4" v-for="(cat, index) in cats" :key="index">
         <div class="card my-4" style="width: 23rem">
@@ -111,6 +112,7 @@ const cats = [
 
 
     <RouterView />
+    
   </div>
 </template>
 
@@ -128,7 +130,7 @@ a {
 }
 
 p {
-  font-family: "QuicksandR";
+  font-family: "Manrope";
   font-size: 17px;
 }
 
@@ -147,12 +149,18 @@ p {
 }
 
 h1 {
-  font-family: "QuicksandB", Helvetica, Arial;
+  font-family: "Manrope", Helvetica, Arial;
   font-size: 80px;
 }
 
+h5 {
+  font-family: "Manrope", Helvetica, Arial;
+  font-weight: 900;
+  font-size: 18px;
+}
+
 div {
-  font-family: "QuicksandB", Helvetica, Arial;
-  font-size: 20px;
+  font-family: "Manrope", Helvetica, Arial;
+  font-size: 17px;
 }
 </style>
