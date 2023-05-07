@@ -72,7 +72,7 @@
               <img
                 src="https://via.placeholder.com/400x300"
                 alt=""
-                class="card-img"
+                class="card-img object-fit-cover"
               />
             </div>
             <div class="card-body">
@@ -93,7 +93,7 @@
               <img
                 src="https://via.placeholder.com/400x200"
                 alt=""
-                class="card-img"
+                class="card-img object-fit-cover"
               />
             </div>
             <div class="card-body">
@@ -114,7 +114,7 @@
               <img
                 src="https://via.placeholder.com/400x500"
                 alt=""
-                class="card-img"
+                class="card-img object-fit-cover"
               />
             </div>
             <div class="card-body">
