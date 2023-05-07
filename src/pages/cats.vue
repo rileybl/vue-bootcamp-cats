@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { CatList } from "../components";
+import AddCatForm from "../components/add-cat-form.vue";
+</script>
 
 <template>
   <div>
@@ -47,89 +50,8 @@
       >
         Meet our furry friends.
       </h1>
-
-      <!-- CAT CARDS -->
-      <!-- <div class="row">
-      <div class="col-md-4" v-for="(cat, index) in cats" :key="index">
-        <div class="card my-4" style="width: 23rem">
-          <img class="card-img-top" :src="cat.image" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">{{ cat.name }}</h5>
-            <p class="card-text">{{ cat.description }}</p>
-            <a href="cat.adoptUrl" class="btn btn-dark">Adopt Me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    END OF CAT CARDS
-  -->
-
-      <div class="row gy-4">
-        <div class="col-12 col-md-4 col-xl-3">
-          <div class="card">
-            <div class="ratio ratio-4x3">
-              <img
-                src="https://via.placeholder.com/400x300"
-                alt=""
-                class="card-img object-fit-cover"
-              />
-            </div>
-            <div class="card-body">
-              <h2 class="h4">Cat 1</h2>
-              <p class="text-muted">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci, inventore explicabo tenetur ratione incidunt ipsa.
-                Necessitatibus maiores reprehenderit ipsa odit. Ratione sed
-                rerum recusandae adipisci, esse delectus reiciendis iure
-                possimus!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-xl-3">
-          <div class="card">
-            <div class="ratio ratio-4x3">
-              <img
-                src="https://via.placeholder.com/400x200"
-                alt=""
-                class="card-img object-fit-cover"
-              />
-            </div>
-            <div class="card-body">
-              <h2 class="h4">Cat 1</h2>
-              <p class="text-muted">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci, inventore explicabo tenetur ratione incidunt ipsa.
-                Necessitatibus maiores reprehenderit ipsa odit. Ratione sed
-                rerum recusandae adipisci, esse delectus reiciendis iure
-                possimus!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-xl-3">
-          <div class="card">
-            <div class="ratio ratio-4x3">
-              <img
-                src="https://via.placeholder.com/400x500"
-                alt=""
-                class="card-img object-fit-cover"
-              />
-            </div>
-            <div class="card-body">
-              <h2 class="h4">Cat 1</h2>
-              <p class="text-muted">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci, inventore explicabo tenetur ratione incidunt ipsa.
-                Necessitatibus maiores reprehenderit ipsa odit. Ratione sed
-                rerum recusandae adipisci, esse delectus reiciendis iure
-                possimus!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+<AddCatForm></AddCatForm>
+      <CatList></CatList>
     </div>
 
     <RouterView />
