@@ -24,17 +24,14 @@
 </template>
 
 <script setup lang="ts">
-import axios from "axios";
-import { Cat } from "../types";
-import { ref } from "vue";
+import { Cat } from '../types';
 
+interface Props {
+  cats: Cat[];
+}
 
-const cats = ref<Cat[]>([]);
+defineProps<Props>()
 
-const getCats = async () => {
-  const response = await axios.get<Cat[]>("/cats.json");
-  cats.value = response.data;
-};
 </script>
 
 <style scoped></style>
