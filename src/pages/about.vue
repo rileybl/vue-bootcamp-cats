@@ -46,7 +46,7 @@
     </div>
 <RouterView />
 
-    </div>
+    </div>np
     
 </template>
 

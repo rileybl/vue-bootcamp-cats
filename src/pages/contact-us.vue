@@ -100,7 +100,7 @@ h1 {
   display: flexbox;
   width: 50%;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   margin: 2rem auto;
   border: 1px solid black;
   border-radius: 20px;

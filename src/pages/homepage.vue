@@ -10,7 +10,7 @@
         />
       </a>
     </nav>
-    <nav class="navbar navbar-expand-lg" id="navbar">
+    <nav class="navbar navbar-expand-md" id="navbar">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -36,40 +36,6 @@
     </nav>
 
     <RouterView />
-    <!-- <div class="container header d-flex justify-content-center align-items-center">
-      <h1>Adopt, don't shop.</h1>
- 
-     
-    </div> -->
-
-    <!-- CAROUSEL TEST -->
-
-    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://i.pinimg.com/originals/b1/f4/54/b1f4547e4a992f3179e0ae7b6ae2930b.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://rare-gallery.com/uploads/posts/173-cat__cat_kitten_wallpaper.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://www.superiorwallpapers.com/images/lthumbs/2016-07/11911_Sweet-little-cat-on-a-blanket-HD-wallpaper.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only"></span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only"></span>
-  </a>
-</div> -->
 
     <main>
       
@@ -236,6 +202,7 @@
   top: 0;
   right: 0;
   padding: 30px;
+
 }
 
 .marketing {
