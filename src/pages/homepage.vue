@@ -1,7 +1,18 @@
 <template>
   <div>
-      <main>
-      
+
+    <!-- HEADER TEXT -->
+
+    <h1
+      style="color: black; font-weight: 900; font-size: 70px; margin: 20px auto"
+    >
+      Save a life, adopt today.
+    </h1>
+
+<!-- CAROUSEL OF CATS  -->
+
+
+    <main>
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
@@ -28,16 +39,13 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <h1 style="color: black; font-weight: 900; font-size: 70px; margin: 20px auto;">Save a life, adopt today.</h1>
           <div class="carousel-item">
-          
             <img
               class="d-block w-100"
               src="https://i.pinimg.com/originals/b1/f4/54/b1f4547e4a992f3179e0ae7b6ae2930b.jpg"
               alt="First slide"
-            /> 
-            <div class="container">
-                </div>
+            />
+            <div class="container"></div>
           </div>
           <div class="carousel-item">
             <img
@@ -46,9 +54,7 @@
               alt="Second slide"
             />
             <div class="container">
-              <div class="carousel-caption">
-               
-              </div>
+              <div class="carousel-caption"></div>
             </div>
           </div>
           <div class="carousel-item active">
@@ -58,9 +64,7 @@
               alt="Third slide"
             />
             <div class="container">
-              <div class="carousel-caption text-end">
-          
-              </div>
+              <div class="carousel-caption text-end"></div>
             </div>
           </div>
         </div>
@@ -85,10 +89,9 @@
       </div>
 
       <div class="container marketing" style="margin-top: 30px">
-      
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-lg-4">
+          <div class="contentDes col-lg-4">
             <img
               class="rounded-circle"
               src="../icons/cat-icon.png"
@@ -102,10 +105,9 @@
               Some representative placeholder content for the three columns of
               text below the carousel. This is the first column.
             </p>
-        
           </div>
           <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
+          <div class="contentDes col-lg-4">
             <img
               class="rounded-circle"
               src="../icons/cat-paw.png"
@@ -118,10 +120,9 @@
               Another exciting bit of representative placeholder content. This
               time, we've moved on to the second column.
             </p>
-          
           </div>
           <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
+          <div class="contentDes col-lg-4">
             <img
               class="rounded-circle"
               src="../icons/adopt.png"
@@ -134,17 +135,13 @@
               And lastly this, the third column of representative placeholder
               content.
             </p>
-          
           </div>
           <!-- /.col-lg-4 -->
         </div>
         <!-- /.row -->
-
-
-
       </div>
 
-      <footer class="container" style="font-family: Manrope; margin-top: 50px;">
+      <footer class="container" style="font-family: Manrope; margin-top: 50px">
         <p class="float-end"><a href="#">Back to top</a></p>
         <p>
           © 2023 Riley's CatCompany, Inc. · <a href="#">Privacy</a> ·
@@ -158,33 +155,10 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-
-
-#navbar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 30px;
-
-}
-
 .marketing {
   font-family: "Manrope", Helvetica, Arial;
   font-weight: 100;
   font-size: 16px;
-}
-.navbar-brand {
-  padding: 10px;
-  padding-top: 20px;
-}
-
-.nav-item {
-  padding: 10px;
-}
-.nav-item {
-  font-family: "Manrope", Helvetica, Arial;
-  font-weight: 900;
-  font-size: 18px;
 }
 
 h1 {
@@ -194,14 +168,17 @@ h1 {
   display: flex;
 }
 
-.header {
-  height: 100vh;
-  position: flex;
-}
-
 /* FEATURETTES */
 
-fw-normal {
-  font-family: "Manrope", Helvetica, Arial;
+.contentDes {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.contentDes img {
+display: block;
+margin: 0 auto;
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div>
- 
     <body>
       <div class="form-container">
         <form accept-charset="UTF-8" method="POST">
@@ -29,33 +28,12 @@
     </body>
 
     <RouterView />
-    
   </div>
 </template>
 
 <script setup lang="ts"></script>
 
 <style scoped>
-#navbar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 30px;
-}
-.navbar-brand {
-  padding: 10px;
-  padding-top: 20px;
-}
-
-.nav-item {
-  padding: 10px;
-}
-.nav-item {
-  font-family: "Manrope", Helvetica, Arial;
-  font-weight: 900;
-  font-size: 18px;
-}
-
 h1 {
   font-family: "Manrope", Helvetica, Arial;
   font-size: 70px;

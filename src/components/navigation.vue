@@ -21,7 +21,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <RouterLink
               class="nav-link active"
@@ -53,4 +53,10 @@
 
 <script setup lang="ts"></script>
 
-<style scoped></style>
+<style scoped>
+.nav-link {
+  font-family: "Manrope";
+  font-size: 20px;
+  margin-left: 20px;
+}
+</style>

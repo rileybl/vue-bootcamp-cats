@@ -13,8 +13,8 @@ const getCats = async () => {
 };
 
 const onNewCats = (newCats: Cat[]) => {
-  cats.value.push(...newCats)
-}
+  cats.value.push(...newCats);
+};
 
 getCats();
 </script>
@@ -22,18 +22,10 @@ getCats();
 <template>
   <div>
     <div class="container py-5">
-      <h1
-        style="
-          color: black;
-          font-weight: 900;
-          font-size: 70px;
-          margin: 20px auto;
-        "
-      >
+      <h1 style="color: black; font-weight: 900; font-size: 70px">
         Meet our furry friends.
       </h1>
-      <AddCatForm class="py-4"
-      @new-cats="onNewCats"></AddCatForm>
+      <AddCatForm class="py-4" @new-cats="onNewCats"></AddCatForm>
       <CatList :cats="cats"></CatList>
     </div>
 
@@ -42,13 +34,6 @@ getCats();
 </template>
 
 <style scoped>
-#navbar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 30px;
-}
-
 a {
   border-radius: 20px;
   padding: 7px 20px;
@@ -57,20 +42,6 @@ a {
 p {
   font-family: "Manrope";
   font-size: 17px;
-}
-
-.navbar-brand {
-  padding: 10px;
-  padding-top: 20px;
-}
-
-.nav-item {
-  padding: 10px;
-}
-.nav-item {
-  font-family: "Manrope", Helvetica, Arial;
-  font-weight: 900;
-  font-size: 18px;
 }
 
 h1 {
