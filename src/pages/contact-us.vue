@@ -36,23 +36,24 @@
 <style scoped>
 h1 {
   font-family: "Manrope", Helvetica, Arial;
-  font-size: 70px;
+  font-size: 4rem;
   font-weight: 900;
 }
 
 /* Contact Form */
 .form-container {
-  display: flexbox;
+  display: flex;
   width: 50%;
   flex-direction: column;
-  /* align-items: center; */
   margin: 2rem auto;
   border: 1px solid black;
   border-radius: 20px;
   padding: 40px;
+  max-width: 700px;
 }
 .form-fields {
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 label {
@@ -63,9 +64,6 @@ label {
   font-size: 1.1rem;
 }
 
-body {
-  display: block;
-}
 button[type="submit"] {
   font-size: 1rem;
   border: none;
@@ -82,10 +80,23 @@ input {
   border-radius: 20px;
   border-width: 1px;
   width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 textarea {
   width: 100%;
   padding: 100px;
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+  .form-container {
+    padding: 20px;
+    width: 80%;
+  }
+  label {
+    font-size: 0.8rem;
+  }
 }
 </style>

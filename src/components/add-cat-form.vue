@@ -12,28 +12,17 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import axios from "axios";
-import { Cat } from "../types";
-import constants from "../constants";
 
-const emit = defineEmits<{
-  (e: "newCats", value: Cat[]): void;
-}>();
+import { useCatsStore } from "../store";
+
+const catsStore = useCatsStore();
 
 const searchTerms = ref("");
 
 const onSubmit = async () => {
-  const response = await axios.get<Cat[]>(
-    "https://api.api-ninjas.com/v1/cats",
-    {
-      params: { name: searchTerms.value },
-      headers: {
-        "X-Api-Key": constants.API_KEY_API_NINJAS
-      }
-    }
-  );
-  emit("newCats", response.data)
-}
+  await catsStore.findAndAdd(searchTerms.value);
+  searchTerms.value = "";
+};
 </script>
 
 <style scoped></style>

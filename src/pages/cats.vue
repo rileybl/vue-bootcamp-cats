@@ -1,22 +1,11 @@
 <script setup lang="ts">
 import { CatList } from "../components";
 import AddCatForm from "../components/add-cat-form.vue";
-import axios from "axios";
-import { Cat } from "../types";
-import { ref } from "vue";
+import { useCatsStore } from "../store";
 
-const cats = ref<Cat[]>([]);
+const catsStore = useCatsStore();
 
-const getCats = async () => {
-  const response = await axios.get<Cat[]>("/cats.json");
-  cats.value = response.data;
-};
-
-const onNewCats = (newCats: Cat[]) => {
-  cats.value.push(...newCats);
-};
-
-getCats();
+catsStore.load();
 </script>
 
 <template>
@@ -25,11 +14,9 @@ getCats();
       <h1 style="color: black; font-weight: 900; font-size: 70px">
         Meet our furry friends.
       </h1>
-      <AddCatForm class="py-4" @new-cats="onNewCats"></AddCatForm>
-      <CatList :cats="cats"></CatList>
+      <AddCatForm class="py-4"></AddCatForm>
+      <CatList></CatList>
     </div>
-
-    <RouterView />
   </div>
 </template>
 

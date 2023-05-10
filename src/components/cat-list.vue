@@ -12,11 +12,17 @@
         <div class="card-body">
           <h2 class="h4">{{ cat.name }}</h2>
           <p class="text-muted">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci,
-            inventore explicabo tenetur ratione incidunt ipsa. Necessitatibus
-            maiores reprehenderit ipsa odit. Ratione sed rerum recusandae
-            adipisci, esse delectus reiciendis iure possimus!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
+            mollitia.
           </p>
+
+          <button
+            class="btn btn-danger"
+            type="button"
+            @click="deleteById(cat.name)"
+          >
+            Delete
+          </button>
         </div>
       </div>
     </div>
@@ -24,13 +30,10 @@
 </template>
 
 <script setup lang="ts">
-import { Cat } from '../types';
+import { storeToRefs } from "pinia";
+import { useCatsStore } from "../store";
 
-interface Props {
-  cats: Cat[];
-}
-
-defineProps<Props>()
+const { cats } = storeToRefs(useCatsStore());
 
 </script>
 

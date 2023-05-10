@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 style="color: black; font-weight: 900; font-size: 70px">The Team</h1>
+  <div class="container py-5">
+    <h1 style="color: black; font-weight: 900; font-size: 70px;">The Team</h1>
 
     <div class="row">
       <img
