@@ -31,7 +31,7 @@
 
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
-import { useCatsStore } from "../store";
+import { useCatsStore } from "../../store";
 
 const { cats } = storeToRefs(useCatsStore());
 

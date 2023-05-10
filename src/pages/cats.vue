@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { CatList } from "../components";
-import AddCatForm from "../components/add-cat-form.vue";
+import { CatList, AddCatForm } from "../components";
 import { useCatsStore } from "../store";
 
 const catsStore = useCatsStore();
