@@ -1,6 +1,6 @@
 <template>
   <div class="row gy-4">
-    <div v-for="cat of cats" class="col-12 col-md-4 col-xl-3">
+    <div v-for="cat of cats" :key="cat.name" class="col-12 col-md-4 col-xl-3">
       <div class="card">
         <div class="ratio ratio-4x3">
           <img
@@ -19,7 +19,7 @@
           <button
             class="btn btn-danger"
             type="button"
-            @click="deleteById(cat.name)"
+            @click="deleteByName(cat.name)"
           >
             Delete
           </button>
@@ -34,6 +34,7 @@ import { storeToRefs } from "pinia";
 import { useCatsStore } from "../../store";
 
 const { cats } = storeToRefs(useCatsStore());
+
 
 </script>
 

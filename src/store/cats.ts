@@ -24,11 +24,11 @@ export const useCatsStore = defineStore('cats', {
             );
             this.cats.push(...response.data);
         },
-        async deleteById(name: string) {
+        async deleteCatByName(name: string) {
             const catIndex = this.cats.findIndex(cat => cat.name === name);
             if (catIndex !== -1) {
                 this.cats.splice(catIndex, 1);
             }
-        }
+        },
     }
 })

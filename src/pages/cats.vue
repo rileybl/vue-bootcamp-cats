@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { CatList, AddCatForm } from "../components";
+import { CatList, AddCatForm, MultipleTextField } from "../components";
 import { useCatsStore } from "../store";
+
 
 const catsStore = useCatsStore();
 
@@ -13,6 +14,8 @@ catsStore.load();
       <h1 style="color: black; font-weight: 900; font-size: 70px">
         Meet our furry friends.
       </h1>
+
+    <MultipleTextField></MultipleTextField>
       <AddCatForm class="py-4"></AddCatForm>
       <CatList></CatList>
     </div>

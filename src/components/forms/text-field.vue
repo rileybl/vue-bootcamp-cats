@@ -7,8 +7,10 @@
       :name="name"
       :id="id"
       :placeholder="placeholder"
-      @change="handleChange"
+      @change="onChange"
       @blur="handleBlur"
+      :value="value"
+      :class="{ 'is-invalid': !!errorMessage }"
     />
 
     <span v-if="errorMessage" class="small text-danger">{{  errorMessage }}</span>
@@ -31,7 +33,12 @@ const props = withDefaults(defineProps<Props>(), {
   type: "text",
 });
 
-const { errorMessage, handleChange, handleBlur } = useField(toRef(props, "name"));
+const { errorMessage, handleBlur, value, setValue } = useField(toRef(props, "name"));
+
+const onChange = (e:Event) => {
+    const target = e.target as HTMLInputElement;
+    setValue(target.value)
+}
 </script>
 
 <style scoped></style>
