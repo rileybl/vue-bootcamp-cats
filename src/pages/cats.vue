@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { CatList, AddCatForm, MultipleTextField } from "../components";
+import { CatList, AddCatForm} from "../components";
+import AddMultipleCatsForm from "../components/cats/add-multiple-cats-form.vue";
 import { useCatsStore } from "../store";
 
 
@@ -14,8 +15,7 @@ catsStore.load();
       <h1 style="color: black; font-weight: 900; font-size: 70px">
         Meet our furry friends.
       </h1>
-
-    <MultipleTextField></MultipleTextField>
+      <AddMultipleCatsForm></AddMultipleCatsForm>
       <AddCatForm class="py-4"></AddCatForm>
       <CatList></CatList>
     </div>
