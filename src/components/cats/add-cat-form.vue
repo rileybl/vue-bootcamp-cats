@@ -1,7 +1,7 @@
 <template>
   <form @submit="onSubmit" class="hstack gap-3">
     <TextField id="txt-catName" name="catName"></TextField>
-    <button class="btn btn-primary">Add</button>
+    <button class="btn btn-dark">Add</button>
   </form>
 </template>
 

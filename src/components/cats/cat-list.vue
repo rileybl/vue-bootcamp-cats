@@ -17,7 +17,7 @@
           </p>
 
           <button
-            class="btn btn-danger"
+            class="btn btn-outline-danger d-flex justify-content-center"
             type="button"
             @click="deleteByName(cat.name)"
           >
@@ -38,4 +38,10 @@ const { cats } = storeToRefs(useCatsStore());
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.btn {
+  border-radius: 20px;
+  padding: 5px 30px;
+}
+
+</style>

@@ -15,14 +15,16 @@ catsStore.load();
       <h1 style="color: black; font-weight: 900; font-size: 70px">
         Meet our furry friends.
       </h1>
-      <AddMultipleCatsForm></AddMultipleCatsForm>
-      <AddCatForm class="py-4"></AddCatForm>
+      <AddMultipleCatsForm class="py-5"></AddMultipleCatsForm>
+      <!-- <AddCatForm class="py-4"></AddCatForm> -->
       <CatList></CatList>
     </div>
   </div>
 </template>
 
 <style scoped>
+
+
 a {
   border-radius: 20px;
   padding: 7px 20px;
@@ -36,6 +38,8 @@ p {
 h1 {
   font-family: "Manrope", Helvetica, Arial;
   font-size: 80px;
+  justify-content: center;
+  display: flex;
 }
 
 h5 {

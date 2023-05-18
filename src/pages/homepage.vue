@@ -2,15 +2,16 @@
   <div>
     <!-- HEADER TEXT -->
     <div class="container py-5">
-      <h1 style="color: black; font-weight: 900; font-size: 70px">
+      <Transition name="fade"><h1 v-show="show" style="color: black; font-weight: 900; font-size: 70px">
         Save a life, adopt today.
-      </h1>
+      </h1></Transition>
+    
     </div>
 
     <!-- CAROUSEL OF CATS  -->
 
     <main>
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div v-show="show" id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -162,9 +163,49 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+
+const show = ref(false);
+
+onMounted(() => {
+  setTimeout(() => {
+    show.value = true!
+  }, 1000);
+})
+
+</script>
 
 <style scoped>
+
+/* <-- animations --> */
+
+.fade-enter-from {
+  opacity: 0;
+  color: red;
+  position: absolute;
+}
+
+.fade-enter-to {
+  opacity: 1;
+  color: black;
+  transition: .6s ease;
+
+}
+
+/* .fade-leave-from {
+  transition: .6s ease;
+  opacity: 0;
+  color: red;
+}
+
+.fade-leave-to {
+  transition: .6s ease;
+  opacity: 0;
+  color: red;
+} */
+
+
 .marketing {
   font-family: "Manrope", Helvetica, Arial;
   font-weight: 100;
@@ -218,6 +259,11 @@ h2 {
 .card:hover {
   background-color: #f5f5f5;
   border-color: #aaa;
+}
+
+#myCarousel {
+position: relative;
+display: flex;
 }
 
 
